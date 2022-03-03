@@ -3,6 +3,10 @@
 A basic Golang library for the
 [RCON Protocol](https://developer.valvesoftware.com/wiki/Source_RCON_Protocol).
 
+This is kind of a implementation of the
+[rcon](https://github.com/hamburghammer/rcon) lib with a simplified API that
+should empower the user.
+
 ## Features
 
 - Max control over the underlying connection.
@@ -41,6 +45,11 @@ specific implementations in the future.
 
 Make the best std lib that provides a low-level implementation but also offers
 packages/ways to abstract the handling with single packets.
+
+I was unhappy with the API of the [rcon](https://github.com/hamburghammer/rcon)
+lib and decided to build a new package to not break the old API. I could also
+have opted to make a version 2 of the old lib, but I feel like the focus has
+shifted and it wouldn't be that clear with a new major version.
 
 ## License
 
