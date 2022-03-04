@@ -73,8 +73,8 @@ func newRequestTooLongError() RequestTooLongError {
 	}
 }
 
-// RequestTooLongError occurres when the body of a packet is to big.
-// Can also be an indicator that the package is malformed/corrupted.
+// RequestTooLongError occurres when the length of a packet is to big.
+// This indicates that the body is too long.
 type RequestTooLongError struct {
 	GrconGenericError
 }
