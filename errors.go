@@ -83,7 +83,7 @@ func newResponseTooLongError() ResponseTooLongError {
 	return ResponseTooLongError{
 		newGrconGenericError(
 			Read,
-			errors.New("response body is too long"),
+			errors.New("response packet is too long"),
 		),
 	}
 }
