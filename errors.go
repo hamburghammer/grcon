@@ -59,6 +59,7 @@ func newUnexpectedFormatError() UnexpectedFormatError {
 }
 
 // UnexpectedFormatError occurres when the packet size is smaller than the minimum size.
+// This indicates a wrongly composed/formatted packet.
 type UnexpectedFormatError struct {
 	GrconGenericError
 }
