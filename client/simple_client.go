@@ -77,12 +77,12 @@ func (sc SimpleClient) Auth(password string) error {
 // waits till the response is read returns it.
 // Supports multi-packet responses.
 //
-// The server has to response in synchronously!
+// The server has to response synchronously!
 //
 // Errors:
 // Returns all errors returned from the Write and Read methode from the RemoteConsole implementation.
 // Can also return an InvalidResponseTypeError if the response is not of the type
-//grcon.SERVERDATA_RESPONSE_VALUE.
+// grcon.SERVERDATA_RESPONSE_VALUE.
 func (sc SimpleClient) Exec(cmd string) ([]byte, error) {
 	cmdPacket := grcon.Packet{
 		Id:   sc.IdGenFunc(),

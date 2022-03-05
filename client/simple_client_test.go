@@ -8,7 +8,7 @@ import (
 )
 
 func TestSimpleClient_Auth(t *testing.T) {
-	t.Run("successfull auth", func(t *testing.T) {
+	t.Run("successful auth", func(t *testing.T) {
 		mockIdGen := &MockIdGenerator{Ids: []grcon.PacketId{1}}
 		mock := &MockRemoteConsole{In: []grcon.Packet{
 			{Id: 1, Type: grcon.SERVERDATA_RESPONSE_VALUE, Body: []byte("")},
@@ -180,7 +180,7 @@ func TestSimpleClient_Auth(t *testing.T) {
 }
 
 func TestSimpleClient_Exec(t *testing.T) {
-	t.Run("successfull execution", func(t *testing.T) {
+	t.Run("successful execution", func(t *testing.T) {
 		mockIdGen := &MockIdGenerator{Ids: []grcon.PacketId{1, 2}}
 		mock := &MockRemoteConsole{In: []grcon.Packet{
 			{Id: 1, Type: grcon.SERVERDATA_RESPONSE_VALUE, Body: []byte("bar")},
@@ -201,7 +201,7 @@ func TestSimpleClient_Exec(t *testing.T) {
 		}
 	})
 
-	t.Run("successfull multi packet execution", func(t *testing.T) {
+	t.Run("successful multi packet execution", func(t *testing.T) {
 		mockIdGen := &MockIdGenerator{Ids: []grcon.PacketId{1, 2}}
 		mock := &MockRemoteConsole{In: []grcon.Packet{
 			{Id: 1, Type: grcon.SERVERDATA_RESPONSE_VALUE, Body: []byte("foo")},

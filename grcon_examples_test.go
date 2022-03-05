@@ -68,7 +68,7 @@ func ExampleRemoteConsole() {
 		log.Fatal("auth failed: auth rejected password invalid")
 	}
 
-	// packet that contais the command to execute
+	// packet that contains the command to execute
 	cmdPacket := grcon.Packet{
 		Id:   2,
 		Type: grcon.SERVERDATA_EXECCOMMAND,
