@@ -35,6 +35,7 @@ const (
 	SERVERDATA_AUTH_RESPONSE PacketType = 2
 )
 
+// Packet encapsulates all fields of a RCON packet excluding the size field.
 type Packet struct {
 	Id   PacketId
 	Type PacketType
