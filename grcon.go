@@ -1,5 +1,5 @@
 /*
-A Go written library for the RCON Protocol from Valve.
+Package grcon library for the RCON Protocol from Valve.
 
 Information to the protocol can be found under:
 https://developer.valvesoftware.com/wiki/Source_RCON_Protocol

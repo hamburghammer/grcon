@@ -1,4 +1,4 @@
-// A package with client implementations to interact over RCON with different servers.
+// Package client provides some implementations to interact over RCON with different servers.
 package client
 
 // Client is the interface that should be implemented by ever client type.
